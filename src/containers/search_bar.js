@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { connect } from "redux";
+import { bindActionCreators } from "redux";
+import { fetchWeather } from "../actions/index";
 
 export default class SearchBar extends Component {
   constructor(props) {
@@ -36,3 +39,5 @@ export default class SearchBar extends Component {
     );
   }
 }
+
+// export default connect()(SearchBar);
